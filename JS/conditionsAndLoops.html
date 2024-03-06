@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Conditions: To do actions based on the conditions which are pre defined.
+
+      // 1. If condition: If condition met then excute block of code.
+      /*
+        Syntax:
+        if(condition){
+            //block of code to execute
+        }
+    */
+      // let x = 20;
+
+      // if(x>50){
+      //     console.log(x)
+      // }
+
+      // 2.if-else: Same as if condition but to handle the rejection we have one more block
+
+      /* 
+    syntax:
+    if(condition){
+        // block to execute
+    }else {
+        // Reject code
+    }
+    */
+
+      // let x = 8;
+      // if(x>10){
+      //     console.log("x is greater than 10")
+      // }else {
+      //     x = x+10
+      //     console.log("x is less than 10", x)
+      // }
+
+      // 3. Nested else-if conditon: we will have nested if else condition
+
+      /* 
+    stntax:
+    if(condition){
+        // code 
+    }else if(condition){
+
+    }else if(condition){
+
+    }else {
+
+    }
+    */
+
+      //   let x = 8;
+      //   if (x === 5) {
+      //     console.log("x is 5");
+      //   } else if (x === 6) {
+      //     console.log("x is 6");
+      //   } else if (x === 7) {
+      //     console.log("x is 7");
+      //   } else if (x === 8) {
+      //     console.log("x is 8");
+      //   } else {
+      //     console.log("Don't have that number");
+      //   }
+
+      // Template literal or String literal
+      //     let x = 10;
+      // console.log(`string ${x}`)
+
+      // 4.Switc condition
+
+      // Syntax
+      /* 
+        switch(condition){
+            case 1: 
+            // Code
+            break;
+            case 2: 
+            // Code
+            break;
+            case n: 
+            // Code
+            break;
+
+            default:
+                // code
+        }
+        */
+
+      //   let day = "Monday";
+      //   switch (day) {
+      //     case "Sunday":
+      //       console.log(`day: ${day}`);
+      //       break;
+      //     case "Monday":
+      //       console.log(`day: ${day}`);
+      //       break;
+      //     case "Tuesday":
+      //       console.log(`day: ${day}`);
+      //       break;
+      //     case "Wednesday":
+      //       console.log(`day: ${day}`);
+      //       break;
+      //     default:
+      //       console.log(`day: Enter selected day only`);
+      //   }
+      //   console.log("Hello");
+
+      // 4. Turinary Operators/ Condition Operators. (?:)
+
+      /*
+      syntax
+    (constion)? true: flase 
+    */
+      // (50>10)? console.log("Hello"): console.log("Hi")
+
+      // False or falsy values
+      // 0, "", undefined, null, NaN
+
+      //Loops:
+
+      // 1. for
+      // 2.nested for loop
+      // 3. While
+      // 4. DO-While
+
+      // 1.For loop
+      // Syntax:
+      // for(initializer; condition; increment/decrement)
+
+      //   for (let i = 0; i < 10; i++) {
+      //     console.log(i);
+      //   }
+
+      //   for(let j = 10 ; j>=2 ; j--) {
+      //     console.log(j);
+      //   }
+
+      // continue and break:
+      // continue: it will break the current iteration and again start from next iteration
+      // Break: it will break the cexecution of next iteration
+
+      // for (let i =0; i<=5 ;i++){
+      //     if(i===3){
+      //         continue;
+      //     }
+      //     console.log(i)
+      // }
+      // for (let i =0; i<=5 ;i++){
+      //     if(i===3){
+      //         break;
+      //     }
+      //     console.log(i)
+      // }
+
+      // 2. Nested for Loops: for loop inside one another.
+
+      // for(let i =0; i<=3 ; i++){
+      //     console.log('Outer',i)
+      //     for(let j= 0; j<=2;j++){
+      //         console.log('Inner',j)
+      //     }
+      // }
+
+      /*
+       1.   *****
+            *****
+            *****
+            *****
+            *****
+        2.  *
+            **
+            ***
+            ****
+            *****
+        3.      *
+               **
+              ***
+             ****
+            *****  
+        4. 
+                1
+               121
+              12321
+             1234321
+            123454321 
+    */
+
+
+    // 3.While and Do-While
+    // while is entry cotrol loop
+    // Do-While is exit control loop
+
+    /* 
+        Syntax:
+        while(condition){
+            //code
+        }
+https://meet.google.com/whu-fqkv-nbr
+        
+        do{
+            //code 
+        }while(condition) {
+            //code
+        }
+    */
+
+
+    let x= 10;
+    while(x>8){
+        console.log(x);
+    }
+    </script>
+  </body>
+</html>
