@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Function without arguments
+      // function add(){
+      //     console.log(5+3)
+      // }
+      // add();
+
+      // Funtion with Parameters:
+      // function add(a,b) {
+      //     console.log(a)
+      //     console.log(b)
+      //     console.log(a + b)
+      // }
+      // add(3,8)
+
+      // Funtion with return keyword:
+      //   function add(a, b, c, d, e) {
+      //     let sum = a + b + c + d + e; //10
+      //     return sum;
+      //     console.log("Hello!");
+      //   }
+      //   let x = add(1, 2, 3, 2, 2);
+      //   console.log(x);
+
+      //     function add(a,b){
+      //       let sum = a+b;
+      //       return "Hello!";
+      //     }
+      //    let x =  add(1, 2)
+      //     console.log(x)
+
+      //   Utility function/ Helper function/Function inside another function
+      // DRY- Do-Not-Repeat.
+
+      /*
+       Wrong method:
+       function fruitProcessor(apples, orranges) {
+        let applePices = apples * 4;
+        let orrangePices = orranges * 4;
+        console.log(
+          `Making Juice with ${applePices} pices and  ${orrangePices} pices of Orranges`
+        );
+      }
+      fruitProcessor(4, 3);
+      */
+
+      //   Breakdown code of   Utility function/ Helper function/Function inside another function
+
+      //   function cutFruit(friut) {
+      //     return friut * 4;
+      //   }
+      //   function fruitProcessor(apples, orranges) {
+      //     let applePices = cutFruit(apples);
+      //     let orrangePices = cutFruit(orranges);
+      //     console.log(
+      //       `Making Juice with ${applePices} pices and  ${orrangePices} pices of Orranges`
+      //     );
+      //   }
+      //   fruitProcessor(4, 3);
+
+      // Nested-funtion:
+      //   function printMsg(msg) {
+      //     function greeting() {
+      //       let y = 20;
+      //     }
+      //     greeting();
+      //   }
+      //   printMsg("Hello Vikram!");
+
+      // Function expression or Anonymous function
+      // let x = 10;
+      //   let name = prompt("Enter your name");
+      //   let greeting = function (name) {
+      //     console.log(name);
+      //   };
+      //   greeting(name);
+
+      // Arrow function:
+      /*
+        Syntax is easy to understand
+        No need to return for single line code
+        No curly brackets are required for single line code.
+        syntax:
+        let arrowFunctionName = ()=>{
+            // Code....!
+        }
+    */
+      let add = (x, y) => x+y
+      let x = add(4, 5);
+      console.log(x);
+    </script>
+  </body>
+</html>
