@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="main_title" id="main">DOM</h1>
+    <div class="">
+        <div class="">
+            <ul>
+                <li>Item-1</li>
+                <li class="list_item">Item-2</li>
+                <li class="list_item">Item-3</li>
+              </ul>
+        </div>
+    </div>
+    
+
+    <script>
+      // getElementById
+      // getElementsByClassName
+      // getElementsByTagName
+      // querySelector
+      // querySelectorAll
+      //   console.log(window);
+
+      // getElementById
+      //   let idVal = document.getElementById("main");
+      //   console.log(idVal);
+
+      //   getElementsClassName
+      //   let classVal = document.getElementsByClassName("list_item");
+      //   console.log(classVal);
+
+      //   getElementsByTagName;
+      //   let tagVal = document.getElementsByTagName("li");
+      //   console.log(tagVal);
+
+      // querySelector
+      // let queryVal = document.querySelector("li");
+      // console.log(queryVal);
+      //   let queryVal = document.querySelector("#main");
+      //   console.log(queryVal);
+      //   let queryVal = document.querySelector(".list_item");
+      //   console.log(queryVal);
+
+      // querSelctorAll
+      //   let queryALlVal = document.querySelectorAll("li");
+      //   console.log(queryALlVal);
+      //   let queryALlVal = document.querySelectorAll("#main");
+      //   console.log(queryALlVal);
+      //   let queryALlVal = document.querySelectorAll(".main_title");
+      //   console.log(queryALlVal);
+
+      //   DOM Traversing:
+      // parent to children
+      //   let ul = document.querySelector("ul");
+      //   let children = ul.children;
+      //   console.log(children);
+
+      // children to parent
+      let li = document.querySelector("li");
+      // let parentVal = li.parentElement;
+      // console.log(parentVal);
+
+      // selecting grandparent
+      // direct method;
+      // let indrectGrandParent = li.parentElement.parentElement.parentElement;
+      // console.log(indrectGrandParent)
+
+      // closest method
+    //   let closestSelection = li.closest("ul");
+    //   console.log(closestSelection);
+    </script>
+  </body>
+</html>
