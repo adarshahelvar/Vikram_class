@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- <style>
-        .para{
-            color:blueviolet
-    </style> -->
+    <style>
+      .div1 {
+        background-color: blue;
+      }
+    </style>
   </head>
   <body>
     <figure id="figure">
@@ -80,9 +81,11 @@
       // Method-2
       let output = ``;
       for (let i = 0; i < students.length; i++) {
-        output += `<div>${students[i]}</div>`;
+        output += `<div class="div1">${students[i]}</div>`;
       }
       document.querySelector("section").innerHTML = output;
-    </script>
+    </script> 
+
+    <script src="./Tasks/task26.js"></script>
   </body>
 </html>
