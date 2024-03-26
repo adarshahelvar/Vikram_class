@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <style>
+        .para{
+            color:blueviolet
+    </style> -->
+  </head>
+  <body>
+    <figure id="figure">
+      <img src="./img/img2.jpeg" alt="" />
+      <figcaption>Lorem, ipsum.</figcaption>
+    </figure>
+
+    <ul>
+      <li>Angular</li>
+      <li>ReactJs</li>
+      <li>NodeJs</li>
+    </ul>
+    <ul>
+      <li>Angular</li>
+      <li>ReactJs</li>
+      <li>NodeJs</li>
+    </ul>
+
+    <p id="para" class="para">Lorem ipsum dolor sit amet.</p>
+    <!-- <p id="para" class="para">Lorem ipsum dolor sit amet.</p>
+    <p id="para" class="para">Lorem ipsum dolor sit amet.</p> -->
+    <input type="text" value="default value" />
+    <div id="inner"></div>
+    <section class="container box"></section>
+
+    <script>
+      // 1. getElemetById
+      //   document.getElementById("para").style.border = "5px solid red";
+
+      //   2. getElementsByClassName
+      document.getElementsByClassName("para")[0].style.border =
+        " 5px solid red";
+
+      //  3. getElementsByTagName
+      document.getElementsByTagName("ul")[1].style.border = "5px dotted green";
+
+      // 4. querySelector
+      document.querySelector("ul li").style.color = "blueviolet";
+      document.querySelector("#figure img").style.padding = "10px";
+
+      //  5. querySelectorAll: it uses all elements in the document
+      document.querySelectorAll("ul li")[4].style.color = "blue";
+      document.querySelectorAll("ul li")[0].style.color = "purple";
+      document.querySelectorAll("ul li")[3].style.color = "green";
+
+      //   Method-1;
+      let students = [
+        "Vikram",
+        "Adarsh",
+        "Ramaya",
+        "Prajwal",
+        "Basav",
+        "Sai",
+        "Raman",
+        "user1",
+      ];
+
+      // let parentElemet = `
+      //     <section>
+      //         <div>${students[0]}</div>
+      //         <div>${students[1]}</div>
+      //         <div>${students[2]}</div>
+      //         <div>${students[3]}</div>
+      //         <div>${students[4]}</div>
+      //         <div>${students[5]}</div>
+      //     </section>
+      // `;
+      // document.getElementById("inner").innerHTML = parentElemet;
+
+      // Method-2
+      let output = ``;
+      for (let i = 0; i < students.length; i++) {
+        output += `<div>${students[i]}</div>`;
+      }
+      document.querySelector("section").innerHTML = output;
+    </script>
+  </body>
+</html>
